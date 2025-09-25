@@ -163,3 +163,8 @@ DELETE FROM funcionarios
 WHERE
   idDepartamento = 1
   AND idFuncionario = 3;
+
+-- 5
+UPDATE funcionarios
+SET
+  salario = salario * 1.05
