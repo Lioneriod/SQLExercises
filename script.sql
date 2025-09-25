@@ -157,3 +157,9 @@ VALUES
 DELETE FROM funcionarios
 WHERE
   idFuncionario IN (11, 12);
+
+-- 4
+DELETE FROM funcionarios
+WHERE
+  idDepartamento = 1
+  AND idFuncionario = 3;
