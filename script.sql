@@ -1,25 +1,27 @@
+-- O basico neah
 CREATE DATABASE exerciciosSQL;
 
 USE exerciciosSQL;
 
 CREATE TABLE
   funcionarios (
-    id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
+    idFuncionario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     sobrenome VARCHAR(100),
     cargo VARCHAR(100),
     salario DECIMAL(10, 2),
-    data_nascimento DATE,
+    dataNascimento DATE,
     cidade VARCHAR(100),
-    id_departamento INT,
-    FOREIGN KEY (id_departamento) REFERENCES departamentos (id_departamento)
+    idDepartamento INT,
+    FOREIGN KEY (idDepartamento) REFERENCES departamentos (idDepartamento)
   )
 CREATE TABLE
   departamentos (
-    id_departamento INT AUTO_INCREMENT PRIMARY KEY,
+    idDepartamento INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL
   );
 
+-- 1
 INSERT INTO
   departamentos (nome)
 VALUES
@@ -27,15 +29,16 @@ VALUES
   ('Call Center'),
   ('TI');
 
+-- 2
 INSERT INTO
   funcionarios (
     nome,
     sobrenome,
     cargo,
     salario,
-    data_nascimento,
+    dataNascimento,
     cidade,
-    id_departamento
+    idDepartamento
   )
   -- Design Gráfico - 1
 VALUES
@@ -149,3 +152,8 @@ VALUES
     'Fortaleza',
     3
   );
+
+-- 3
+DELETE FROM funcionarios
+WHERE
+  idFuncionario IN (11, 12);
