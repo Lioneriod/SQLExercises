@@ -92,7 +92,7 @@ VALUES
     'Paulo',
     'Mendes',
     2500.00,
-    'Analista',
+    'Gerente',
     '1995-08-12',
     'Fortaleza',
     2
@@ -167,4 +167,11 @@ WHERE
 -- 5
 UPDATE funcionarios
 SET
-  salario = salario * 1.05
+  salario = salario * 1.05;
+
+--6 
+UPDATE funcionarios
+SET
+  salario = salario * 1.02
+WHERE
+  cargo = 'Gerente';
