@@ -169,9 +169,21 @@ UPDATE funcionarios
 SET
   salario = salario * 1.05;
 
---6 
+-- 6 
 UPDATE funcionarios
 SET
   salario = salario * 1.02
 WHERE
   cargo = 'Gerente';
+
+-- 7
+SELECT
+  *
+FROM
+  departamentos;
+
+-- 8 
+SELECT
+  *
+FROM
+  funcionarios
