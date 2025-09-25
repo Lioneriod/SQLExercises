@@ -42,17 +42,40 @@ VALUES
   (
     'Ellen',
     'Maria',
-    'Diretora Criativa',
+    'Diretora criativa',
     4000.00,
     '1999-04-05',
     'Meu coração',
     1
   ),
-  ('', 'Fortaleza', 1),
-  ('Fortaleza', 1),
-  ('Fortaleza', 1),
+  (
+    'Apollo',
+    'Lou',
+    'Professor de inglês',
+    1500.00,
+    '2005-04-27',
+    'Fortaleza',
+    1
+  ),
+  (
+    'Ana',
+    'Silva',
+    3000.00,
+    'Analista',
+    '1990-05-10',
+    'Fortaleza',
+    1
+  ),
+  (
+    'Carlos',
+    'Pereira',
+    3200.00,
+    'Gerente',
+    '1985-03-22',
+    'Fortaleza',
+    1
+  ),
   -- Call Center - 2
-  ('Fortaleza', 2),
   (
     'Maria Eduarda',
     'Bivar',
@@ -62,18 +85,67 @@ VALUES
     'Fortaleza',
     2
   ),
-  ('Fortaleza', 2),
-  ('Fortaleza', 2),
+  (
+    'Paulo',
+    'Mendes',
+    2500.00,
+    'Analista',
+    '1995-08-12',
+    'Fortaleza',
+    2
+  ),
+  (
+    'Clara',
+    'Costa',
+    2700.00,
+    'Assistente',
+    '1991-12-01',
+    'Fortaleza',
+    2
+  ),
+  (
+    'Rafael',
+    'Santos',
+    3300.00,
+    'Coordenador',
+    '1987-02-14',
+    'Fortaleza',
+    2
+  ),
   -- TI - 3
   (
     'Leonardo',
     'Lima',
-    'Estagiário',
-    2000.00,
+    'C++er',
+    0.00,
     '1998-06-25',
     'Fortaleza',
     3
   ),
-  ('Fortaleza', 3),
-  ('Fortaleza', 3),
-  ('Fortaleza', 3);
+  (
+    'Ana Beatriz',
+    'Vidal',
+    'Javer',
+    0.00,
+    '2005-11-18',
+    'Fortaleza',
+    3
+  ),
+  (
+    'Juliana',
+    'Ferreira',
+    2600.00,
+    'Assistente',
+    '1996-01-18',
+    'Fortaleza',
+    3
+  ),
+  (
+    'Bruno',
+    'Rodrigues',
+    3100.00,
+    'Coordenador',
+    '1989-09-09',
+    'Fortaleza',
+    3
+  );
