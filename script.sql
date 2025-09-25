@@ -186,4 +186,36 @@ FROM
 SELECT
   *
 FROM
+  funcionarios;
+
+-- 9
+SELECT
+  nome,
+  sobrenome
+FROM
   funcionarios
+WHERE
+  cargo = 'Gerente';
+
+-- 10
+SELECT
+  nome,
+  sobrenome,
+  dataNascimento
+FROM
+  funcionarios
+WHERE
+  MONTH (dataNascimento) = MONTH (CURDATE ());
+
+-- 11
+SELECT
+  *
+FROM
+  funcionarios
+WHERE
+  cidade = 'Fortaleza';
+
+-- 12 NÃOOO EU NÃO QUERO :'(
+DELETE FROM funcionarios;
+
+DELETE FROM departamentos;
